@@ -1,56 +1,60 @@
-
-
-body {
-    font-family: 'Merriweather', serif;  
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+html {
+    color: #55687a;
+    font-family: 'Merriweather', sans-serif;
 }
 
-h2,
-p {
+
+main{
+    margin: 1rem auto;
+    width: 90%
+}
+
+
+header {
+    background-color: #2d3945;
+    color: white;
     text-align: center;
-    font-size: 3em;
 }
 
-p,
-label,
-button {
-    color: #cbced1;
-    font-size: 2.5em;
-    font-weight: 5000;
+select, option, input, label, button {
+    padding: 20px; 
+    display: flex;   
+    flex-direction: row;
+    margin:0;
 }
 
-
-form {
-    display: flex;
-    flex-direction: column; 
+.uhead h2 {
+    color: #2d3945;
+    text-align: center;
 }
 
-label {
-    display: block;
+.uhead p {
+    color: #b1b5b9;
+    text-align: center;
+}
+
+.botline {
+    border-bottom: 10px solid #2d3945;
+    margin-bottom: 5px
+}
+.topline {
+    border-top: 5px solid #2d3945;
+    margin-top: 5px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 30px
+}
+
+legend {
+    color:#2d3945;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 input {
-    display: inline;
-}
-
-
-legend {
-   font-size: 2em; 
-}
-
-
-header{
-    background-color: #2d3945;
-    color:white;
-    text-align: center;
-    padding: 5px 10px;
-    font-size: 1.75em;
-}
-
-button {
-    background-color: #4ebbb5;
-    color: white;
+    background-color: #eff0f1;
+    border: none;
+    border-radius: 8px;
 }
