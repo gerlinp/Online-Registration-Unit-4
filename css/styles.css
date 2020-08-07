@@ -1,3 +1,7 @@
+body {
+    box-sizing: border-box;
+}
+
 html {
     color: #55687a;
     font-family: 'Merriweather', sans-serif;
@@ -6,7 +10,19 @@ html {
 
 main{
     margin: 1rem auto;
-    width: 90%
+    width: 95%;
+}
+
+.regbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletters {
+    display: inline-grid;
+}
+.newsbox label{
+grid-column: 2;
 }
 
 
@@ -21,6 +37,7 @@ select, option, input, label, button {
     display: flex;   
     flex-direction: row;
     margin:0;
+    flex-wrap: wrap;
 }
 
 .uhead h2 {
@@ -58,3 +75,15 @@ input {
     border: none;
     border-radius: 8px;
 }
+
+button {
+ background-color: #4ebbb5;
+ color: white;
+ border: none;
+ border-radius: 8px;
+ padding: 30px;
+ justify-content: center;
+}
+
+
+

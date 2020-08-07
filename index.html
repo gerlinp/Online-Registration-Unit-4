@@ -32,7 +32,7 @@
 
                 <div class="regbox">
                 <label for="fname">Full Name</label>
-                <input type="text" id="fname" name="user_name" placeholder="Required" class="item">
+                <input type="text" id="fname" name="user_name" placeholder="Required">
                 </div>
 
                 <div class="regbox">  
@@ -123,32 +123,46 @@
             </fieldset>
 
             <div class="topline"></div>
-            <fieldset >           
-                <legend>Newsletter</legend>
-                <label>Select the newsletters you would like to receive</label>
+            <fieldset class="newsletters">
 
-                <input type="checkbox" id="nwhtml" name="user_newsletter">
-                <Label class="newsletter" for="nwhtml">HTML News</label>
-                
-                <input type="checkbox" id="nwcss" name="user_newsletter">
-                <Label class="newsletter" for="nwcss">CSS News</label>
-                
-                <input type="checkbox" id="nwjava" name="user_newsletter">
-                <Label class="newsletter" for="nwjava">Javascript News</label>
+                <div class="newsbox">           
+                    <legend>Newsletter</legend>
+                    <label>Select the newsletters you would like to receive</label>
+                </div>
 
-                <label>Newsletter format</label>
+                <div class="newsbox"> 
+                    <input type="checkbox" id="nwhtml" name="user_newsletter">
+                    <Label class="newsletter" for="nwhtml">HTML News</label>
+                </div> 
 
-                <input type="radio" id="htext" value="htext" name="user_format">
-                <label for="htext" class="rdo">HTML</label>
+                <div class="newsbox"> 
+                    <input type="checkbox" id="nwcss" name="user_newsletter">
+                    <Label class="newsletter" for="nwcss">CSS News</label>
+                </div>  
 
-                <input type="radio" id="ptext" value="ptext" name="user_format">
-                <label for="ptext" class="rdo">Plain text</label>
+                <div class="newsbox">      
+                    <input type="checkbox" id="nwjava" name="user_newsletter">
+                    <Label class="newsletter" for="nwjava">Javascript News</label>
+                </div>  
 
-                <label>Other topics you'd like to hear about</label>
+                    <label>Newsletter format</label>
+                <div class="newsbox">  
+                    <input type="radio" id="htext" value="htext" name="user_format">
+                    <label for="htext" class="rdo">HTML</label>
+                </div>
+
+                <div class="newsbox">      
+                    <input type="radio" id="ptext" value="ptext" name="user_format">
+                    <label for="ptext" class="rdo">Plain text</label>
+                </div>
+
+                    <label>Other topics you'd like to hear about</label>
+                 
                 <textarea id="topics" name="user_topics"></textarea>
             </fieldset>
-
-        <button type="submit">Sign up</button>
+        <div class="regbox">    
+            <button type="submit">Sign up</button>
+        </div>
 
         </form>
 
