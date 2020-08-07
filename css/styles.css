@@ -19,10 +19,11 @@ main{
 }
 
 .newsletters {
-    display: inline-grid;
+    display: flex;
 }
-.newsbox label{
-grid-column: 2;
+.newsbox {
+    display: inline-flex;
+    flex-direction: row;
 }
 
 
