@@ -1,90 +1,166 @@
-body {
+/* ----------------Base Styles------------------- */
+
+* {
     box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
-html {
-    color: #55687a;
-    font-family: 'Merriweather', sans-serif;
+fieldset {
+    border: none;
 }
 
+h1,
+h2,
+legend {
+    font-weight: bold;
+    font-size: 2em;
+}
 
-main{
+p, 
+label {
+    font-size: 1.25em;
+}
+
+input,
+select {
+    background-color: #eff0f1;;
+    border: none;
+    height: 60px;
+    border-radius: 2px;
+}
+
+#zip {
+    width: 50%;
+}
+
+.aligncenter {
+    text-align: center;
+    border-bottom: 5.5px solid #2d3945;
+    margin-bottom: 5px
+}  /* top Border line under header */
+
+.bordertop {
+    border-top: 2.75px solid #2d3945;
+    margin-top: 5px;
+}
+
+textarea {
+    background-color: #eff0f1;
+    border: none;  
+}
+
+.newsbox input{
+    margin-top: 25px;
+
+}
+.newsbox label{
+    margin-left: 0px;
+    padding-left: 5px;
+}
+
+button {
+    background-color: #4ebbb5;
+    color: white;
+    height: 60px;
+    margin: 50px 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: -1px;
+    vertical-align: middle;
+  }
+
+
+::placeholder {
+    text-align: right;
+    padding-right:10px;
+    font-style: italic;
+}
+
+.exceed {
+    background-color: #12ADD9;
+}
+
+input:focus,
+select:focus {  /* CSS transition */
+    background-color: #27CE8B;
+    transition-duration: 2s;
+  }
+
+  input, select {
+    font-size: 18px;
+}
+
+/* ----------------Base Layouts------------------- */
+
+main {
     margin: 1rem auto;
-    width: 95%;
+    width: 98%;
+    color: #55687a;
 }
 
-.regbox{
+.regbox {
     display: flex;
     flex-direction: column;
 }
-
-.newsletters {
-    display: flex;
-}
-.newsbox {
-    display: inline-flex;
-    flex-direction: row;
-}
-
 
 header {
     background-color: #2d3945;
     color: white;
     text-align: center;
+    padding: 30px;
 }
 
-select, option, input, label, button {
-    padding: 20px; 
-    display: flex;   
-    flex-direction: row;
-    margin:0;
-    flex-wrap: wrap;
+textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+
+/* ----------------Media Queries------------------- */
+
+@media (min-width: 768px) {
+
+    main {
+        margin: 1rem auto;
+        width: 70%;
+        color: #55687a;
+    }
+
+    
+    .regbox {
+        display: flex;
+        flex-direction: row;
+    }
+    .regbox label{
+        display: inline-block;
+        min-width: 200px;
+    }
+    .regbox input,
+    select {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #zip {
+        width: 25%;
+    }
+
+    button {
+        width: 100%;
+    }
 }
-
-.uhead h2 {
-    color: #2d3945;
-    text-align: center;
-}
-
-.uhead p {
-    color: #b1b5b9;
-    text-align: center;
-}
-
-.botline {
-    border-bottom: 10px solid #2d3945;
-    margin-bottom: 5px
-}
-.topline {
-    border-top: 5px solid #2d3945;
-    margin-top: 5px;
-}
-
-fieldset {
-    border: none;
-    margin-top: 30px
-}
-
-legend {
-    color:#2d3945;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-input {
-    background-color: #eff0f1;
-    border: none;
-    border-radius: 8px;
-}
-
-button {
- background-color: #4ebbb5;
- color: white;
- border: none;
- border-radius: 8px;
- padding: 30px;
- justify-content: center;
-}
-
-
-
